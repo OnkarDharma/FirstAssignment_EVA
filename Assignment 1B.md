@@ -15,3 +15,4 @@ By using training we adjust the values of kernels. The number of output channels
 
 Each filter can give one feature. For edge detection from image there will one kernel and so on.
 
+![alt text](https://lh3.googleusercontent.com/DG8CAeltoGTkMu5Z3inbmX5r8PefiOv_p8rJsUXXsFhm4g1DiqLl0eGP43xuCVmOghLE3UI=s139)
