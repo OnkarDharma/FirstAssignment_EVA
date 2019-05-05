@@ -51,11 +51,13 @@ These are just two kernels which extracts horizontal edges from the images. Ther
 
 # *Why should we only (well mostly) use 3x3 Kernels?*
 
-If we apply 3 X 3 kernel twice then final receptive field will be (3 X 3 + 3 X 3). These are nothing but weights. If kernel size is smaller then it will give lower number of weights. The advantage is that we can add more number of layers to extract information from the image. This will be computationally very effective. The advantage of adding more number of layer is program can learn many complex non-linear functions. If we define kernel size as 15 X 15 then on smaller machine(less RAM) it may give OM(Out of Memory) error.
+If we apply 3 X 3 kernel twice then final receptive field will be (3 X 3 + 3 X 3). These are nothing but weights. If kernel size is smaller then it will give lower number of weights. The advantage is that we can add more number of layers to extract information from the image. This will be ***computationally very effective***. The advantage of adding more number of layer is program can learn many ***complex non-linear functions***. If we define kernel size as 15 X 15 then on smaller machine(less RAM) it may give *OM(Out of Memory) error*.
 
 Also on very small size of images it will try to extract as many number of features it could so that detection task will give more accurate results.
 
-Another point is that other than corner columns each columns pixel value gets iterated twice which will help to reduce the loss of information. 
+*Another point is that other than corner columns each columns pixel value gets iterated twice which will help to reduce the loss of information.* 
+
+**Note: Drawback is number of back-propogation operation increses.**
 
 # *How many times do we need to perform 3x3 convolution operation to reach 1x1 from 199x199 (show calculations)*
 
